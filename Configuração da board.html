@@ -1,0 +1,485 @@
+<!DOCTYPE html> <html class data-ctzscriptallow=true><meta charset=utf-8><meta name=theme-color content=#D6DAF0><meta name=application-name content=8chan><meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes"><meta http-equiv=Cache-control content="no-cache, must-revalidate"><title>Configuração da board | sys.8ch.net</title><link rel="shortcut icon" href=data:><body class="8chan is-moderator stylesheet-default active-page"><header><h1>Configuração da board</h1><div class=subtitle><p><a href=https://sys.8ch.net/mod.php?/>Voltar ao painel</a></p></div></header><form action=https://sys.8ch.net/mod.php?/settings/firechan method=post><table><tbody><tr><th>URI<td>/firechan/ <span class=unimportant>(this cannot be changed)</span><tr><th>Título<td><input size=25 type=text name=title value="Expropriado pelo movimento BANTIFA" autocomplete=off><tr><th>Subtítulo<td><input size=25 type=text name=subtitle value="Os meios de produção são do povo!" autocomplete=off></table><table><tbody><tr><th>Board type<td><select name=board_type id=board_type><option value=imgboard selected>Imageboard<option value=txtboard>Textboard<option value=fileboard>Fileboard</select><tr><th>Enable country flags<td><input type=checkbox name=country_flags><tr><th>Enable custom board flags<br><span class=unimportant>First, click on <a href=https://sys.8ch.net/mod.php?/flags/firechan><i>Edit board flags</i></a> to add your flags.<br>Note: if you enable this, you will disable country flags.</span><td><input type=checkbox name=user_flags><tr><th>Disable thread featuring<br><span class=unimportant>Note: If disabled, nobody will be able to feature any thread on your board on the 8chan front page.</span><td><input type=checkbox name=enabled_opt_out><tr><th>Enable custom board assets<br><span class=unimportant>Customize your board's Spoiler / File Deleted / No File assets.<br>Click on <a href=https://sys.8ch.net/mod.php?/assets/firechan><i>Edit board assets</i></a> to add custom assets (or they will 404).</span><td><input type=checkbox name=custom_assets><tr><th>Enable forced anonymous boardwide<br><span class=unimportant>Every thread will be anonymized.<br>The <i>Name</i> and <i>Subject</i> fields will disappear and the <i>Email</i> field will be restricted to a dropdown menu.</span><td><input type=checkbox name=field_disable_name checked><tr><th>Enable forced anonymous per thread<br><span class=unimportant>Users are given the option to allow tripfags/namefags in the threads they create. Only replies will be anonymized.<br>The <i>Name</i> and <i>Subject</i> fields will disappear and the <i>Email</i> field will be restricted to a dropdown menu.</span><td><input type=checkbox name=force_anon_thread checked><tr><th>Allow Board Volunteers to see post histories<td><input type=checkbox name=allow_mod_to_see_subrange><tr><th>Show capcodes and usernames automatically<br><span class=unimportant>The capcodes and usernames of logged-in users will appear automatically when they post through mod.php.<br>This applies to all account types.</span><td><input type=checkbox name=force_cap><tr><th>Disable thread creation for nonstaff users<br><span class=unimportant>Only the Board Owner, Board Volunteer(s) and/or Reporter(s) will be able to create threads (using mod.php).<br>Anyone will be able to reply to such threads.</span><td><input type=checkbox name=caps_only> <span class=unimportant></span><tr><th>Allow embedding<br><span class=unimportant>Users will be able to embed content from the following websites: youtube.com, xhamster.com, thegoldwater.com,<br>redtube.com, pornhub.com, vimeo.com, tube8.com, xvideos.com, youjizz.com, twitch.tv, dailymotion.com,<br>vaughnlive.tv, liveleak.com, nicovideo.jp, streamable.com, soundcloud.com, xaniatube.com, vlive.tv, vocaroo.com,<br> hooktube.com, and smashcast.tv.</span><td><input type=checkbox name=enable_embedding checked><tr class=imgboard style=display:table-row><th>Force OPs to post images when creating threads<td><input type=checkbox name=force_image_op checked><tr><th>Force OPs to fill out the <i>Subject</i> field when creating threads<td><input type=checkbox name=force_subject_op><tr><th>Force users to add custom/country flags to their posts<td><input type=checkbox name=force_flag><tr><th>Enable user IDs (randomized per thread)<td><input type=checkbox name=poster_ids><tr><th>Display post counter when you hover over per-thread IDs<td><input type=checkbox name=enable_postcounter_perthread checked><tr><th>Display SAGE! on posts with <i>sage</i> in the <i>Email</i> field<td><input type=checkbox name=show_sages><tr><th>Convert ... (normal ellipsis) to … (Unicode horizontal ellipsis) automatically<td><input type=checkbox name=auto_unicode><tr><th>Disallow combining characters (Zalgo text, Vietnamese text etc.)<td><input type=checkbox name=strip_combining_chars><tr><th>Unindex my board<br><span class=unimportant>Your board will disappear from boards.html, the <i>Trending boards</i> and <i>Top boards</i> bars, and the Nerve Center.<br>Please note: if you fail to sign in within two weeks, your board will still show up on the list of claimable boards.</span><td><input type=checkbox name=meta_noindex><tr><th>Allow [code] tags<td><input type=checkbox name=code_tags checked><tr class="imgboard fileboard" style=display:table-row><th>Show the oekaki applet in the post form<td><input type=checkbox name=oekaki><tr class=imgboard style=display:table-row><th>Allow SWF uploads<td><input type=checkbox name=allow_flash><tr class=imgboard style=display:table-row><th>Allow PDF uploads<td><input type=checkbox name=allow_pdf checked><tr><th>Habilitar o lançamento de dados<td><input type=checkbox name=allow_roll checked><tr><th>Enable the <a href=https://blog.xkcd.com/2008/01/14/robot9000-and-xkcd-signal-attacking-noise-in-chat/>Robot9000</a> moderation script<br><span class=unimportant>Users who post unoriginal content will be muted automatically.</span><td><input type=checkbox name=robot_enable><tr><th>Don't allow users to repost files on your board<br><span class=unimportant>This will apply to every thread on your board.</span><td><input type=checkbox name=image_reject_repost><tr><th>Don't allow users to repost files in the same thread<br><span class=unimportant>This will apply to individual threads only.</span><td><input type=checkbox name=image_reject_repost_in_thread><tr><th>Allow users to delete their own posts<td><input type=checkbox name=allow_delete><tr><th>Allow users to see when a thread is bumplocked<br><span class=unimportant>A small anchor icon will be added to bumplocked threads.</span><td><input type=checkbox name=view_bumplock><tr><th>Allow Torposting<br><span class=unimportant>Users will be able to post through the <a href=http://oxwugzccvk3dk6tj.onion/>8chan .onion address</a>.<br>By default, the Tor user ID is <i>ID:000000</i>.</span><td><input type=checkbox name=tor_posting><tr><th>Enable CAPTCHA per post<br><span class=unimportant>Users will be required to solve an 8chan-specific CAPTCHA in order to post.</span><td><input type=checkbox name=captcha><tr><th>Enable CAPTCHA only for thread creation<br><span class=unimportant>Users will be required to solve an 8chan-specific CAPTCHA to create new threads.<br>Users may post replies without having to solve a CAPTCHA.</span><td><input type=checkbox name=new_thread_capt><tr><th>Make your board's bans public<br><span class=unimportant>Any bans by the Board Owner / Board Volunteer(s) will show up on the <a href=https://8ch.net/bans.html>public ban list</a>.</span><td><input type=checkbox name=public_bans><tr><th>Make your board's action log public<br><span class=unimportant>Users will be able to see the actions of the Board Owner / Board Volunteer(s) on a public list.<br>Choose <i>None</i> to hide the board log from public view.</span><td><select name=public_logs><option value=0 selected>None<option value=1>Full log of all actions<option value=2>Full log of all actions, no usernames</select><tr><th>Maximum number of newlines per post<td><select name=max_newlines><option value=0>Unlimited<option value=20>20<option value=21>21<option value=22>22<option value=23>23<option value=24>24<option value=25>25<option value=26>26<option value=27>27<option value=28>28<option value=29>29<option value=30>30<option value=31>31<option value=32>32<option value=33>33<option value=34>34<option value=35>35<option value=36>36<option value=37>37<option value=38>38<option value=39>39<option value=40>40<option value=41>41<option value=42>42<option value=43>43<option value=44>44<option value=45>45<option value=46>46<option value=47>47<option value=48>48<option value=49>49<option value=50>50<option value=51>51<option value=52>52<option value=53>53<option value=54>54<option value=55>55<option value=56>56<option value=57>57<option value=58>58<option value=59>59<option value=60>60<option value=61>61<option value=62>62<option value=63>63<option value=64>64<option value=65>65<option value=66>66<option value=67>67<option value=68>68<option value=69>69<option value=70>70<option value=71>71<option value=72>72<option value=73>73<option value=74>74<option value=75>75<option value=76>76<option value=77>77<option value=78>78<option value=79>79<option value=80>80<option value=81>81<option value=82>82<option value=83>83<option value=84>84<option value=85>85<option value=86>86<option value=87>87<option value=88>88<option value=89>89<option value=90>90<option value=91>91<option value=92>92<option value=93>93<option value=94>94<option value=95>95<option value=96>96<option value=97>97<option value=98>98<option value=99>99<option value=100>100<option value=101>101<option value=102>102<option value=103>103<option value=104>104<option value=105>105<option value=106>106<option value=107>107<option value=108>108<option value=109>109<option value=110>110<option value=111>111<option value=112>112<option value=113>113<option value=114>114<option value=115>115<option value=116>116<option value=117>117<option value=118>118<option value=119>119<option value=120>120<option value=121>121<option value=122>122<option value=123>123<option value=124>124<option value=125>125<option value=126>126<option value=127>127<option value=128>128<option value=129>129<option value=130>130<option value=131>131<option value=132>132<option value=133>133<option value=134>134<option value=135>135<option value=136>136<option value=137>137<option value=138>138<option value=139>139<option value=140>140<option value=141>141<option value=142>142<option value=143>143<option value=144>144<option value=145>145<option value=146>146<option value=147>147<option value=148>148<option value=149>149<option value=150>150<option value=151>151<option value=152>152<option value=153>153<option value=154>154<option value=155>155<option value=156>156<option value=157>157<option value=158>158<option value=159>159<option value=160>160<option value=161>161<option value=162>162<option value=163>163<option value=164>164<option value=165>165<option value=166>166<option value=167>167<option value=168>168<option value=169>169<option value=170>170<option value=171>171<option value=172>172<option value=173>173<option value=174>174<option value=175>175<option value=176>176<option value=177>177<option value=178>178<option value=179>179<option value=180>180<option value=181>181<option value=182>182<option value=183>183<option value=184>184<option value=185>185<option value=186>186<option value=187>187<option value=188>188<option value=189>189<option value=190>190<option value=191>191<option value=192>192<option value=193>193<option value=194>194<option value=195>195<option value=196>196<option value=197>197<option value=198>198<option value=199>199<option value=200>200<option value=201>201<option value=202>202<option value=203>203<option value=204>204<option value=205>205<option value=206>206<option value=207>207<option value=208>208<option value=209>209<option value=210>210<option value=211>211<option value=212>212<option value=213>213<option value=214>214<option value=215>215<option value=216>216<option value=217>217<option value=218>218<option value=219>219<option value=220>220<option value=221>221<option value=222>222<option value=223>223<option value=224>224<option value=225>225<option value=226>226<option value=227>227<option value=228>228<option value=229>229<option value=230>230<option value=231>231<option value=232>232<option value=233>233<option value=234>234<option value=235>235<option value=236>236<option value=237>237<option value=238>238<option value=239>239<option value=240>240<option value=241>241<option value=242>242<option value=243>243<option value=244>244<option value=245>245<option value=246>246<option value=247>247<option value=248>248<option value=249>249<option value=250>250<option value=251>251<option value=252>252<option value=253>253<option value=254>254<option value=255>255<option value=256>256<option value=257>257<option value=258>258<option value=259>259<option value=260>260<option value=261>261<option value=262>262<option value=263>263<option value=264>264<option value=265>265<option value=266>266<option value=267>267<option value=268>268<option value=269>269<option value=270>270<option value=271>271<option value=272>272<option value=273>273<option value=274>274<option value=275>275<option value=276>276<option value=277>277<option value=278>278<option value=279>279<option value=280>280<option value=281>281<option value=282>282<option value=283>283<option value=284>284<option value=285>285<option value=286>286<option value=287>287<option value=288>288<option value=289>289<option value=290>290<option value=291>291<option value=292>292<option value=293>293<option value=294>294<option value=295>295<option value=296>296<option value=297>297<option value=298>298<option value=299>299<option value=300 selected>300</select><tr><th>Número de páginas<td><select name=max_pages><option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10<option value=11>11<option value=12>12<option value=13>13<option value=14>14<option value=15>15<option value=16>16<option value=17>17<option value=18>18<option value=19>19<option value=20>20<option value=21>21<option value=22>22<option value=23>23<option value=24>24<option value=25 selected>25</select><tr><th>Número de repostas para a restrição de tópico<td><select name=reply_limit><option value=250 selected>250<option value=275>275<option value=300>300<option value=325>325<option value=350>350<option value=375>375<option value=400>400<option value=425>425<option value=450>450<option value=475>475<option value=500>500<option value=525>525<option value=550>550<option value=575>575<option value=600>600<option value=625>625<option value=650>650<option value=675>675<option value=700>700<option value=725>725<option value=750>750</select><tr><th>Bumplock after...<br><span class=unimportant>Counted in hours, this allows you to decide when a thread will be automatically bumplocked.<br>For instance, if set to <i>1</i>, threads will be automatically bumplocked one hour after being created.<br>Use integers only (<i>0</i> for never).</span><td><input type=text name=bumplock_after pattern=\d+ size=4 value=0><tr><th>Minimum number of characters for thread creation<br><span class=unimportant>Pick an integer between 0 and 1024.</span><td><input type=text name=min_body size=4 value=0><tr><th>Idioma<br><span class=unimportant>To contribute, please refer to the <a href=https://8ch.net/translation.html>8chan Translation Tutorial</a> or use OpenIB's <a href=https://www.transifex.com/8chan/openib/>Transifex page</a>.</span><td><select name=locale><option value=en>en<option value=ar>ar<option value=bal>bal<option value=ca>ca<option value=cs_CZ>cs_CZ<option value=da_DK>da_DK<option value=de_DE>de_DE<option value=en>en<option value=en_AU>en_AU<option value=en_NZ>en_NZ<option value=eo>eo<option value=es>es<option value=es_AR>es_AR<option value=es_ES>es_ES<option value=es_MX>es_MX<option value=et>et<option value=et_EE>et_EE<option value=fi_FI>fi_FI<option value=fr_FR>fr_FR<option value=ga>ga<option value=he_IL>he_IL<option value=hu_HU>hu_HU<option value=is>is<option value=it_IT>it_IT<option value=ja_JP>ja_JP<option value=jbo>jbo<option value=lt_LT>lt_LT<option value=lv_LV>lv_LV<option value=nb_NO>nb_NO<option value=nl>nl<option value=nl_NL>nl_NL<option value=pl_PL>pl_PL<option value=pt_BR selected>pt_BR<option value=pt_PT>pt_PT<option value=rj_RJ>rj_RJ<option value=ru_RU>ru_RU<option value=sk_SK>sk_SK<option value=sv_FI>sv_FI<option value=sv_SE>sv_SE<option value=tr_TR>tr_TR<option value=zh_CN>zh_CN<option value=zh_HK>zh_HK<option value=zh_TW>zh_TW</select><tr><th>Maximum number of images per post<td><select name=max_images><option value=1>1<option value=2 selected>2<option value=3>3<option value=4>4<option value=5>5</select><tr><th>Enable twemojis<td><input type=checkbox name=enable_emoji checked><tr><th>Tripcode whitelist<br><span class=unimportant>Use different lines for new entries. Leave it blank to allow all tripcodes.</span><br><span class=unimportant>If you don't want tripfags on your board, please refer to the <i>Forced anonymous</i> settings.</span><td><textarea name=tripcode_whitelist style=height:100px;width:220px></textarea></tr> <tr><th colspan=2><strong>Antispam settings</strong></tr> <tr><th>Antecipação de 404<br><span class=unimportant>If enabled, threads with less than 10 replies will 404 at Page 5.<br>If there's a raid, spammers will have to post 10 replies in every thread they create to slide an entire board.</span><td><input type=checkbox name=early_404><tr><th>Maximum number of threads per hour boardwide<br><span class=unimportant>Set the maximum number of threads that can be created per hour on your board, regardless of poster.<br>If a thread is deleted, it doesn't count.</span><td><select name=hour_max_threads><option value=zero>0<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10<option value=11>11<option value=12>12<option value=13>13<option value=14>14<option value=15>15<option value=16>16<option value=17>17<option value=18 selected>18<option value=19>19<option value=20>20<option value=21>21<option value=22>22<option value=23>23<option value=24>24<option value=25>25<option value=26>26<option value=27>27<option value=28>28<option value=29>29<option value=30>30<option value=31>31<option value=32>32<option value=33>33<option value=34>34<option value=35>35<option value=36>36<option value=37>37<option value=38>38<option value=39>39<option value=40>40<option value=41>41<option value=42>42<option value=43>43<option value=44>44<option value=45>45<option value=46>46<option value=47>47<option value=48>48<option value=49>49<option value=50>50<option value=51>51<option value=52>52<option value=53>53<option value=54>54<option value=55>55<option value=56>56<option value=57>57<option value=58>58<option value=59>59<option value=60>60<option value=61>61<option value=62>62<option value=63>63<option value=64>64<option value=65>65<option value=66>66<option value=67>67<option value=68>68<option value=69>69<option value=70>70<option value=71>71<option value=72>72<option value=73>73<option value=74>74<option value=75>75<option value=76>76<option value=77>77<option value=78>78<option value=79>79<option value=80>80<option value=81>81<option value=82>82<option value=83>83<option value=84>84<option value=85>85<option value=86>86<option value=87>87<option value=88>88<option value=89>89<option value=90>90<option value=91>91<option value=92>92<option value=93>93<option value=94>94<option value=95>95<option value=96>96<option value=97>97<option value=98>98<option value=99>99<option value=100>100<option value=none>unlimited</select></table> <p style=text-align:center> [<a href=https://sys.8ch.net/mod.php?/assets/firechan>Edit board assets</a>] [<a href=https://sys.8ch.net/mod.php?/flags/firechan>Editar bandeiras</a>] [<a href=https://sys.8ch.net/mod.php?/volunteers/firechan>Editar voluntários</a>] [<a href=https://sys.8ch.net/mod.php?/tags/firechan>Editar tags</a>] [<a href=https://sys.8ch.net/mod.php?/edit_pages/firechan>Editar páginas</a>] <table><tbody><tr><th>Nome de usuário padrão<td><input type=text name=anonymous value=Proletári@><tr><th>Board announcement bar<br><span class=unimportant>You can use HTML too.<br></span><td><input type=text name=blotter value=https://8ch.net/expropriado/index.html size=75> [<a id=preview-announcement target=_blank href=https://sys.8ch.net/mod.php?/preview/firechan>Preview</a>] <tr><th>Folha de estilos<br><span class=unimportant>Note: it does not validate CSS.</span><br><span class=unimportant>URLs permitidos:<br>https://i.imgur.com/<br>https://media.8ch.net/<br>https://fonts.googleapis.com/<br>https://fonts.gstatic.com/</span><td><textarea name=css style=height:100px;width:600px>body{
+        background: #120D0D;
+	color: #F0F0F0  ;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 12px;
+}
+
+.quote {
+    color:#84998A ;
+}
+
+header div.subtitle,h1 {
+  color: #84998A;
+  text-align: center;
+}
+
+span.heading {
+  color: #84998A;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+span.public_ban {
+  display: block;
+  color: #993333;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+element {
+    color: #84998A;
+    text-decoration: none;
+}
+
+.theme-catalog div.thread {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+    height: 300px;
+    width: 205px;
+    overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    position: relative;
+    font-size: 11px;
+    background: #120D0D none repeat scroll 0% 0%;
+        background-color: #120D0D;
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    border: 1px solid ;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-top-color: #993333;
+        border-right-color: #993333;
+        border-bottom-color: #993333;
+        border-left-color: #993333;
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border-image-source: none;
+        border-image-slice: 100% 100% 100% 100%;
+        border-image-width: 1 1 1 1;
+        border-image-outset: 0 0 0 0;
+        border-image-repeat: stretch stretch;
+    max-height: 300px;
+}
+
+.theme-catalog div.thread:hover {
+    color: #4D1212 ;
+    background: #120D0D none repeat scroll 0% 0%;
+    border: #4D1212 1px dashed;
+        background-color: #120D0D ;
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+}
+
+a, a:visited {
+    text-decoration: underline;
+    color: #4D2E2E;
+}
+
+a:hover, .intro a.post_no:hover {
+    color: #84998A;
+}
+
+
+.dropzone {
+    color: #84998A;
+    cursor: default;
+    margin: auto;
+    padding: 0px 4px;
+    text-align: center;
+    min-height: 50px;
+    max-height: 140px;
+    transition: all 0.2s ease 0s;
+    background: #120D0D;
+  	border: #993333 1px solid;
+  	padding: 1px 1px;
+  	border-width: 1px;
+    border-style: solid solid solid solid;
+    border-color: #993333;
+}
+
+.dropzone .remove-btn {
+    cursor: pointer;
+    color: rgba(255, 119, 0, 1);
+    display: inline-block;
+    vertical-align: bottom;
+    bottom: 10px;
+    position: relative;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.dropzone .remove-btn:hover {
+    cursor: pointer;
+    color: #4D1212;
+}
+
+.dropzone .file-hint {
+    color: rgba(255, 119, 0, 0.61);
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 10px 0px;
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    top: 5px;
+    transition: all 0.2s ease 0s;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    border: 2px dashed rgba(145, 92, 0, 0.26);
+        border-top-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        border-top-style: dashed;
+        border-right-style: dashed;
+        border-bottom-style: dashed;
+        border-left-style: dashed;
+        border-top-color: rgba(145, 92, 0, 0.26);
+        border-right-color: rgba(145, 92, 0, 0.26);
+        border-bottom-color: rgba(145, 92, 0, 0.26);
+        border-left-color: rgba(145, 92, 0, 0.26);
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border-image-source: none;
+        border-image-slice: 100% 100% 100% 100%;
+        border-image-width: 1 1 1 1;
+        border-image-outset: 0 0 0 0;
+        border-image-repeat: stretch stretch;
+}
+
+.file-hint:hover, .dropzone.dragover .file-hint {
+    color: #84998A;
+    border-color: #84998A;
+}
+
+.post-menu ul {
+    color: #120D0D;
+    background-color: #993333;
+    border: 1px solid #993333;
+    padding: 0px;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+.post-menu li:hover {
+    color: #84998A;
+    background-color: #120D0D;
+}
+
+h1 {
+	font-size: 20pt;
+	text-align: center;
+	letter-spacing: 0px;
+}
+div.title, h1 {
+	color: #993333 ;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+div.title p {
+	font-size: 10px;
+}
+a:link, a:visited, .intro a.email span.name {
+	color: #84998A;
+	text-decoration: none;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+a:link:hover, a:visited:hover {
+	color: #993333;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-decoration: none;
+}
+
+a.post_no {
+	color: #84998A ;
+	text-decoration: none;
+}
+a.post_no:hover {
+	color: #993333 !important;
+	text-decoration: underline overline;
+}
+div.post.reply {
+	background: #120D0D;
+	border: #993333  1px solid;
+margin-bottom: 10px;
+
+}
+div.post.reply.highlighted {
+	background: #120D0D;
+	border: #4D1212 1px dashed;
+}
+div.post.reply div.body a:link, div.post.reply div.body a:visited {
+	color: #84998A;
+}
+div.post.reply div.body a:link:hover, div.post.reply div.body a:visited:hover {
+	color: #993333 ;
+}
+.intro span.subject {
+	font-size: 12px;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #84998A ;
+	font-weight: 800;
+}
+
+.intro span.name {
+	color: #84998A ;
+	font-weight: 800;
+}
+.intro a.capcode, p.intro a.nametag {
+	color: magenta;
+	margin-left: 0;
+}
+.intro a.email, p.intro a.email span.name, p.intro a.email:hover, p.intro a.email:hover span.name {
+	color: #84998A ;
+}
+input[type="text"], textarea, select {
+	background: #120D0D;
+	color: #993333 ;
+	border: #993333 1px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 10pt;
+}
+input[type="password"] {
+	background: #993333 ;
+	color: #993333 ;
+	border: #993333 1px solid;
+}
+form table tr th {
+	background: #993333 ;
+	color: #120D0D;
+	border: #993333;
+	font-weight: 800;
+	text-align: center;
+	padding: 0;
+}
+div.banner {
+	background: #84998A ;
+	color: #120D0D;
+	text-align: center;
+	width: 250px;
+	padding: 4px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 12px;
+}
+div.banner a {
+    color:#120D0D;
+}
+input[type="submit"] {
+	background: #993333 ;
+	border: #993333  1px solid;
+	color: #120D0D;
+}
+input[type="submit"]:hover {
+	background: #200000;
+	border: #993333 1px solid;
+	color: #84998A ;
+}
+input[type="text"]:focus {
+    border:#993333 1px solid;
+}
+p.fileinfo a:hover {
+	text-decoration: underline;
+}
+
+span.trip {
+	color: #84998A ;
+}
+div.pages {
+	color: #84998A ;
+	background: #120D0D;
+	border: #993333 1px solid;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 10pt;
+}
+div.pages a.selected {
+	color: #993333;
+}
+hr {
+	height: 1px;
+	border: #993333  1px solid;
+}
+div.boardlist {
+	color: #993333 ;
+    background-color: #120D0D;
+}
+
+div.ban {
+	background-color: transparent;
+	border: transparent 0px solid;
+}
+div.ban h2 {
+	background: transparent;
+	color: lime;
+	font-size: 12px;
+}
+
+span.spoiler {
+  background: #120D0D none repeat scroll 1% 0%;
+	border: #311700 1px solid;
+	padding: 2px 4px;
+	border-width: 2px;
+  border-style: solid solid solid solid;
+  border-color: #311700;
+  color: #120D0D;
+	margin-bottom: 4px;
+        margin-top: 4px;
+  display: inline-block;
+}
+
+div.post.reply div.body span.spoiler a {
+  color: #993333;
+}
+
+span.spoiler:hover,div.post.reply div.body span.spoiler:hover a {
+  color: #84998A;
+	background: #120D0D
+}
+
+
+table.modlog tr th {
+	background: #120D0D;
+	color: #84998A ;
+}
+
+.desktop-style div.boardlist:not(.bottom) {
+  text-shadow: #120D0D 1px 1px 1px, #120D0D -1px -1px 1px, #120D0D -1px 1px 1px, #120D0D 1px -1px 1px;
+  background-color: #120D0D;
+  padding-bottom: 5px;
+  padding-top: 4px;
+}
+
+
+.desktop-style div.boardlist:not(.bottom):hover, .desktop-style div.boardlist:not(.bottom).cb-menu {
+  background-color: #120D0D;
+}
+
+div.report {
+	color: #120D0D;
+}
+
+.banlist-opts .checkboxes label {
+    display: block;
+    color: #993333;
+}
+
+tr.tblhead &gt; th {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    padding: 0px;
+    color: #993333;
+    background: #120D0D;
+    border: #993333 1px solid;
+}
+
+#banlist td:hover {
+    color: #4D1212;
+    background: #120D0D none repeat scroll 0% 0%;
+    border: #4D1212 1px dashed;
+    overflow: visible;
+    height: auto !important;
+    z-index: 1;
+    position: relative;
+    padding: 1px;
+        padding-top: 1px;
+        padding-right: 1px;
+        padding-bottom: 1px;
+        padding-left: 1px;
+}
+
+/* options.js */
+#options_div, #alert_div {
+	background: #120D0D;
+}
+.options_tab_icon {
+	color: #84998A ;
+}
+.options_tab_icon.active {
+	color: #120D0D;
+}
+
+#quick-reply table {
+	background: none repeat scroll 0% 0% #120D0D !important;
+}
+
+.modlog tr:nth-child(even), .modlog th {
+	background-color: #120D0D;
+}
+
+
+
+.box {
+	background: #120D0D;
+	border-color: #200000;
+	color: #993333;
+	border-radius: 10px;
+}
+.box-title {
+	background: transparent;
+	color: #993333 ;
+}
+
+table thead th {
+	background: #120D0D;
+	border-color: #200000;
+	color: #120D0D;
+	border-radius: 4px;
+}
+table tbody tr:nth-of-type( even ) {
+	background-color: #120D0D;
+}
+
+table.board-list-table .board-uri .board-sfw {
+	color: #993333;
+}
+tbody.board-list-omitted td {
+	background: #120D0D;
+	border-color: #200000;
+}
+
+table.board-list-table .board-tags .board-cell:hover {
+	background: #120D0D;
+}
+table.board-list-table tr:nth-of-type( even ) .board-tags .board-cell {
+	background: #120D0D;
+}</textarea><tr></table><table id=wf><tbody><tr><th colspan=2>Filtros<tr><th>Substituir<th>por<tr><td><input name=replace[] value><td><input name=with[] value></table><ul style=padding:0;text-align:center;list-style:none><li><input type=button value="Acrescentar filtro" id=wf_add></ul><table id=tags class=fileboard style=display:none><tbody></table><ul style=padding:0;text-align:center;list-style:none><li class=fileboard style=display:none><input type=button value="Add another tag" id=tag_add><li><input type=submit value="Salvar alterações"></ul><p style=text-align:center class=unimportant>Please note: some changes will only take effect once a new post/thread is created.</p></form><hr><footer><p class=unimportant style=margin-top:20px;text-align:center>- <a href=http://tinyboard.org/>Tinyboard</a> + <a href=https://int.vichan.net/devel/>vichan</a> + <a href=https://github.com/ctrlcctrlv/infinity>infinity</a> + <a href=https://github.com/OpenIB/OpenIB/>OpenIB</a> -<br><a href=http://tinyboard.org/>Tinyboard</a> Copyright © 2010-2014 Tinyboard Development Group <br><a href=https://int.vichan.net/devel/>vichan</a> Copyright © 2012-2014 vichan-devel<br><a href=https://8ch.net/8code/>infinity</a> Copyright © 2013-2019 N.T. Technology, Inc. based on sources from Fredrick Brennan's "Infinity Development Group"<br><a href=https://github.com/OpenIB/OpenIB/>OpenIB</a> by <a target=_blank href=https://twitter.com/codemonkeyz>Code Monkey ★</a><p class=unimportant style=text-align:center>All posts on 8chan are the responsibility of the individual poster and not the administration of 8chan, pursuant to 47 U.S.C. § 230.<p class=unimportant style=text-align:center>We have not been served any secret court orders and are not under any gag orders.<p class=unimportant style=text-align:center>To file a DMCA takedown notice, please email <a href=mailto:dmca@8ch.net>dmca@8ch.net</a>. In the interest of <br>transparency, notices of claimed infringement will be posted on <a href=https://8ch.net/delete/>&gt;&gt;&gt;/delete/</a>.</p></footer><style id=stylus-6 class=stylus>body{background:#EEF2FF url(data:) repeat-x 50% 0%;color:black;font-family:arial,helvetica,sans-serif;font-size:10pt;margin:0 4px;padding-left:4px;padding-right:4px}table tbody tr:nth-of-type(even){background-color:#D6DAF0}a,a:visited{text-decoration:underline;color:#34345C}a:hover,.intro a.post_no:hover{color:#ff0000}header{margin:1em 0}h1{font-family:tahoma;letter-spacing:-2px;font-size:20pt;margin:0}header div.subtitle,h1{color:#AF0A0F;text-align:center}header div.subtitle{font-size:8pt}form table{margin:auto}form table input{height:auto}input[type="text"],textarea{border:1px solid #a9a9a9;text-indent:0;text-shadow:none;text-transform:none;word-spacing:normal;font-size:inherit;font-family:sans-serif}form table tr td{text-align:left;margin:0;padding:0}form table tr th{text-align:left;padding:4px}form table tr th{background:#98E}.unimportant,.unimportant *{font-size:10px}hr{border:none;border-top:1px solid #B7C5D9;height:0;clear:left}th,td{border-collapse:collapse}</style><div id=yahe-hint-container style=display:none></div>
